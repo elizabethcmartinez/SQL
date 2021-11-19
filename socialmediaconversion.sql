@@ -35,7 +35,7 @@ select COUNT(ad_id) as NumberAds, campaign_id, interest from dbo.SocialMediaCamp
  order by Spent desc
 
  -- Campaign ID 1178 received the highest conversion count of 60 customer accounts
- -- with a Number of 625 ads required to reach such sales 
+ -- with a Number of 625 ads required to reach such conversions 
 
  select max(total_conversion) HighestConversionRate,
 		count(ad_id) NumberofAdsRequired, campaign_id
