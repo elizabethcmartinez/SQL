@@ -21,11 +21,6 @@ create view ConversionsByCampaign AS
 Select campaign_id, gender, total_conversion from dbo.SocialMediaCampaign$
 group by gender, campaign_id, Total_Conversion;
 
---Campaign ID 1178 with customer interest of +100 customer accounts 
-select COUNT(ad_id) as NumberAds, campaign_id, interest from dbo.SocialMediaCampaign$
- where interest > 100
- group by campaign_id, interest
-
  -- Campaign ID 1178 received Highest traffic at 3 Million impressions  
  -- Capital required $640.00 for campaign 
 
@@ -80,3 +75,7 @@ from dbo.SocialMediaCampaign$
 group by campaign_id, spent
 order by ConversionPercent desc
 
+--Campaign ID 1178 with customer interest of +100 customer accounts 
+select COUNT(ad_id) as NumberAds, campaign_id, interest from dbo.SocialMediaCampaign$
+ where interest > 100
+ group by campaign_id, interest
