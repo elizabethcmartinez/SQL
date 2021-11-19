@@ -22,7 +22,7 @@ Select campaign_id, gender, total_conversion from dbo.SocialMediaCampaign$
 group by gender, campaign_id, Total_Conversion;
 
  -- Campaign ID 1178 received Highest traffic at 3 Million impressions  
- -- Capital required $640.00 for campaign 
+ -- Marketing spending required $640.00
 
  select top 3 spent, campaign_id, Impressions
  from dbo.SocialMediaCampaign$
